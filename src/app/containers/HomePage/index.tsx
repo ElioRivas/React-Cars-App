@@ -15,8 +15,9 @@ const PageContainer = styled.div`
     items-center 
     overflow-x-hidden        
     `}
+    
 `;
-
+//hola
 export function HomePage() {
   return(
   <PageContainer>
