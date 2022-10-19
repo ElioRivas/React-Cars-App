@@ -79,6 +79,3 @@ export function NavItems() {
   )
 }
 
-//1:02:58 / 8:15:43
-//https://www.youtube.com/watch?v=4ELH8CT4J0A&t=1580s&ab_channel=CoderOne
-
