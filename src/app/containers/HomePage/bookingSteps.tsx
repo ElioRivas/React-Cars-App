@@ -22,7 +22,7 @@ const Title = styled.h2`
         text-3xl
         lg:text-4xl
         text-black
-        font-black
+        font-extrabold
     `};
 `;
 
