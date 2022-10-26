@@ -1,17 +1,17 @@
-FROM node:16 AS production
+FROM node:16 as production 
 
-ARG NODE_ENV = production
-ENV NODE_ENV = ${NODE_ENV}
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
 
-WORKDIR /usr/src/api
+WORKDIR /usr/src/app
 
 COPY package.json .
 COPY yarn.lock .
 
 RUN yarn install --production=false
 
-COPY . .
+COPY . . 
 
 RUN yarn build
 
-CMD ["sh","-c","yarn typeorm migration:run && yarn start:prod"]
+CMD ["node", "server.js"]
